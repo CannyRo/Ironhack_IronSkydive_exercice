@@ -8,6 +8,7 @@
 
 html,
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', serif;
@@ -64,7 +65,11 @@ h5 {
     background-color: var(--dark-blue);
 
     .nav-bar-ul{
-        width: 1200px;
+        display: flex;
+        justify-content: space-evenly;
+        /* width: 1200px; */
+        width: 100%;
+        max-width: 1200px;
         margin: 0 auto;
         list-style: none;
         text-align: center;
@@ -78,6 +83,7 @@ h5 {
 }
 
 .header {
+    position: relative;
     padding-top: 50px;
     height: 650px;
     background: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
@@ -87,6 +93,9 @@ h5 {
 }
 
 .quote {
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
     font-size: 2.5em;
 }
 
@@ -98,9 +107,23 @@ h5 {
 }
 
 .container{
-    width: 1200px;
+    /* width: 1200px; */
+    width: 100%;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 75px 0;
+}
+#general-information {
+    display: flex;
+    justify-content: space-evenly;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+    }
 }
 .text {
     margin: 20px 0;
@@ -110,6 +133,7 @@ h5 {
 }
 
 .link-btn {
+    padding: 10px 30px;
     font-family: 'Roboto Condensed', serif;
     font-size: 2em;
     letter-spacing: 0.5px;
@@ -117,6 +141,16 @@ h5 {
     text-decoration: none;
     background-color: var(--sky-blue);
     color: white;
+}
+#structure{
+    padding: 75px 0;
+}
+
+#structure > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .service-box {
@@ -161,6 +195,18 @@ h5 {
         height: 180px;
     }
 }
+
+#team > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#team > div > article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .schedule-table{
     margin: 0 auto 40px auto;
     font-size: 1.5rem;
@@ -172,6 +218,9 @@ h5 {
     }
 }
 .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 0 25px 0;
     padding: 40px 100px;
     text-align: center;
@@ -191,4 +240,8 @@ h5 {
     margin-bottom: 30px;
     font-style: normal;
     font-size: 0.8em;
+}
+.map-frame{
+    width: 60%;
+    height: 375px;
 }
