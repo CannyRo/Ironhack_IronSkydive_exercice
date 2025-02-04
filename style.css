@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --sky-blue: rgb(67, 163, 230);
+    --dark-blue: rgb(25, 33, 41);
+    --text: rgb(5, 14, 19);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', serif;
+    font-size: 10px;
+    line-height: 3.5rem;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Condensed', serif;
+}
+
+h1 {
+    font-size: 9em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 5em;
+    line-height: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: #020819 8px -20px 9px;
+}
+
+h3 {
+    font-size: 4.2em;
+    text-align: center;
+    line-height: 1em;
+}
+
+h4 {
+    font-size: 1.5em;
+    line-height: 1em;
+    letter-spacing: 0.4px;
+}
+
+h5 {
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+.nav-bar {
+    background-color: var(--dark-blue);
+
+    a {
+        font-size: 2em;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.header {
+    height: 650px;
+    background: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote {
+    font-size: 2.5em;
+}
+
+.dark-background {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.text {
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.link-btn {
+    font-family: 'Roboto Condensed', serif;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--sky-blue);
+    color: white;
+}
+
+.service-box {
+    font-size: 1.7em;
+    text-align: center;
+
+    img {
+        width: 125px;
+    }
+}
+
+#team {
+    .section-text {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .member-name {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    img{
+        width: 250px;
+        height: 180px;
+    }
+}
+.footer{
+    text-align: center;
+    font-size: 1.9em;
+
+    a{
+        color: var(--sky-blue);
+        text-decoration: none;
+    }
+
+    ul{
+        list-style: none;
+    }
+}
+.address{
+    font-size: normal;
+    font-size: 0.8em;
+}
